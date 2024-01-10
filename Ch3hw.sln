@@ -1,25 +1,512 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _1227
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //*********************************************** Q:讀入五個整數，求這五個整數的和。   用for迴圈**********************************************8**
+
+            //Console.WriteLine("請輸入五個數值");
+            //int sum = 0;
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine($"第{i + 1}個數值為");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //    sum += num;
+            //}
+
+            //Console.WriteLine($"答案是{sum}");
+            //Console.ReadKey();
+
+
+            //*******************************************  Q:讀入五個整數，求這五個整數的和。 用while迴圈**************************************************
+
+
+            //Console.WriteLine("請輸入五個數值");
+            //int sum = 0;
+
+            //int i = 0;
+            //while (i < 5)
+            //{
+            //    Console.WriteLine($"第{i + 1}個數值為");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //    sum += num;
+            //    i++;
+            //}
+            //Console.Write($"答案是{sum}");
+
+            //Console.ReadKey();
+
+
+            //************************************  Q:求N個整數的和，N由使用者輸入。   用for迴圈************************************************************
+
+
+            //Console.WriteLine("請輸入n個數值");
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //int sum = 0;
+
+            //for (int i = 0; i < x; i++)
+            //{
+            //    Console.WriteLine($"第{i + 1}個數值為");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //    sum += num;
+            //}
+
+            //Console.Write($"答案是{sum}");
+            //Console.ReadKey();
+
+
+            //***************************************   Q:求N個整數的和，N由使用者輸入。    用while迴圈*************************************************
+
+
+            //Console.WriteLine("請輸入你想要幾個整數的合");
+            //int sum = 0;
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //int i = 0;
+
+            //while (i < x)
+            //{
+            //    Console.WriteLine($"你輸入的第{i + 1}個數");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //    i++;
+
+            //    sum += num;
+            //}
+            //Console.WriteLine($"所有數的合{sum}");
+            //Console.ReadKey();
+
+
+            //***********************************  Q:假設有N個正整數，求其中的最大值。  for迴圈***********************************************************
+
+            //Console.WriteLine("請輸入n個數值");
+            //int all = Convert.ToInt32(Console.ReadLine());
+            //int min = int.MinValue;
+
+
+            //for (int i = 0; i < all; i++)
+            //{
+            //    Console.WriteLine($"第{i + 1}個數值為");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+
+            //    if (num > min)
+            //    {
+            //        min = num;
+            //    }
+
+            //}
+
+            //Console.Write($"最大的數是{min}");
+            //Console.ReadKey();
+
+
+            //*****************************  Q:假設有N個正整數，求其中的最大值。  while迴圈**************************************************************
+
+            //Console.WriteLine("請輸入n個數值");
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //int min = int.MinValue;
+            //int i = 0;
+
+            //while (i < x ) 
+            //{
+            //    Console.WriteLine($"第{i + 1}個數值為");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //    i++;
+
+            //    if (num > min)
+            //    {
+            //        min = num;
+            //    }
+
+            //}
+
+            //Console.Write($"最大的數是{min}");
+            //Console.ReadKey();
+
+
+            //***********************************************  Q:巢狀迴圈 Nested loops for用法****************************************************
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.WriteLine($"第{i}組為i = {i}, j = {j}");
+            //    }
+            //}
+            //Console.ReadKey();
+
+
+            //*********************************************** Q:巢狀迴圈 Nested loops  while用法***************************************************
+
+            //int x = 0; 
+            //while(x<3)
+            //{
+            //    int y = 0;
+            //    while(y<3)
+            //    {
+            //        Console.WriteLine($"第{x}組為i = {x},j = {y}");
+            //        y++;
+            //    }
+            //    x++;
+            //}
+            //Console.ReadKey(); 
+
+
+            //*******************************************  Q:有N個正整數,請求出最大奇數   for迴圈**********************************************************
+
+            //Console.WriteLine("請輸入有幾個數");
+            //int total = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("請輸入第1個數");
+            //int max = Convert.ToInt32(Console.ReadLine());
+
+            //if (max % 2 == 0)
+            //{
+            //    max = 0;
+            //}
+
+            //for (int i = 1; i < total; i++)
+            //{
+
+            //    Console.WriteLine($"請輸入第{i + 1}個數");
+            //    int now = Convert.ToInt32(Console.ReadLine());
+
+            //    if (now % 2 == 1)
+            //    {
+            //        if (now > max)
+            //        {
+            //            max = now;
+            //        }
+
+            //    }
+            //}
+
+            //Console.WriteLine($"最大的奇數是:{max}");
+            //Console.ReadKey();
+
+
+            //***************************************** Q:有N個正整數，求其中最大的奇數  while迴圈********************************************************
+
+            //Console.WriteLine("請輸入有幾個數");
+            //int total = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("請輸入第1個數");
+            //int max = Convert.ToInt32(Console.ReadLine());
+
+            //if (max % 2 == 0)
+            //{
+            //    max = 0;
+            //}
+
+            //int i = 1;
+            //while (i < total)
+            //{
+            //    Console.WriteLine($"請輸入第{i + 1}個數");
+            //    int now = Convert.ToInt32(Console.ReadLine());
+            //    if (now % 2 == 1)
+            //    {
+            //        if (now > max)
+            //        {
+            //            max = now;
+            //        }
+            //    }
+            //    i++;
+            //}
+
+            //Console.WriteLine($"最大奇數是{max}");
+            //Console.ReadKey();
+
+            //***********************************求 N階層,即求1x2x3x...x N,請求輸入 N,讓for迴圈自2依序乘到 N************************************************
+
+            //Console.WriteLine("請輸入有幾階層");
+            //int total = Convert.ToInt32(Console.ReadLine());
+            //int answer=1;
+            //for (int i=2;i<=total;i++)
+            //{
+
+            //    answer *= i;
+
+            //}
+            //Console.WriteLine($"答案是{answer}");
+            //Console.ReadKey();
+
+
+            //***********************************求 N階層,即求1x2x3x...x N,請求輸入 N,讓while迴圈自2依序乘到 N************************************************
+
+            //Console.WriteLine("請輸入有幾階層");
+            //int total = Convert.ToInt32(Console.ReadLine());
+            //int answer = 1;
+            //int i = 2;
+            //while (i <= total)
+            //{
+            //    answer *= i;
+            //    i++;
+            //}
+            //Console.WriteLine($"答案是{answer}");
+            //Console.ReadKey();
+
+
+            //*********************************** Q: 輸出一個九九乘法表 for迴圈*********************************************************************************
+
+            //Console.WriteLine("開始輸出99乘法表:");
+            //for (int i = 1; i <= 9; i++)
+            //{
+            //    for (int j = 1; j <= 9; j++)
+            //    {
+            //        Console.WriteLine($"{i}*{j}={i * j}");
+
+            //    }
+            //}
+            //Console.ReadKey();
+
+
+            //*********************************** Q: 輸出一個九九乘法表 while迴圈********************************************************************************
+
+            //Console.WriteLine("開始輸出99乘法表:");
+            //int i = 1;
+            //while (i <= 9)
+            //{
+            //    int j = 1;
+            //    while (j <= 9)
+            //    {
+            //        Console.WriteLine($"{i}*{j}={i * j}");
+            //        j++;
+            //    }
+            //    i++;
+            //}
+            //Console.ReadKey();
+
+
+            //********************************* Q:請將程式改成如下輸出：有間隔 for迴圈 還沒完成*****************************************************************
+
+            //Console.WriteLine("開始輸出99乘法表:");
+            //for (int i = 1; i <= 9; i++)
+            //{
+            //    for (int j = 1; j <= 9; j++)
+            //    {
+            //        Console.Write($"{i}*{j}={i * j}\n \t");  
+
+
+
+            //    }
+            //}
+            //Console.ReadKey();
+
+
+            //************************************ Q:寫一程式，輸入10個整數，求其最小值 for迴圈 ****************************************************************
+
+            //Console.WriteLine("請輸入第1個整數");
+            //int min = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 0; i < 9; i++)
+            //{
+
+            //    Console.WriteLine($"請輸入第{i+2}個整數");
+
+            //    int now = Convert.ToInt32(Console.ReadLine());
+
+            //    if (min > now)
+            //    {
+            //        min = now;
+
+            //    }
+            //}
+            //Console.WriteLine($"最小值是{min}");
+            //Console.ReadKey();
+
+
+            //******************************************* Q:寫一程式，輸入10個整數，求其最小值 while 迴圈 ******************************************************
+
+            //Console.WriteLine("請輸入第1個整數");
+            //int min = Convert.ToInt32(Console.ReadLine());
+
+            //int i = 0;
+            //while (i < 9)
+            //{
+            //    Console.WriteLine($"請輸入第{i + 2}個整數");
+            //    int now = Convert.ToInt32(Console.ReadLine());
+            //    i++;
+            //    if (min > now)
+            //    {
+            //        min = now;
+
+            //    }
+            //}
+            //Console.WriteLine($"最小值為{min}");
+            //Console.ReadKey();
+
+            //***************************************** Q:寫一程式，輸入N個整數，求其最小值 for迴圈*************************************************************
+
+            //Console.WriteLine("請決定輸入幾個數字");
+            //int num = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("請輸入第1個整數");
+            //int min = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 1; i < num; i++)
+            //{
+            //    Console.WriteLine($"請輸入第{i+1}個整數");
+            //    int now = Convert.ToInt32(Console.ReadLine());
+
+            //    if (min > now)
+            //    {
+            //        min = now;
+            //    }
+            //}
+            //Console.WriteLine($"最小值{min}");
+            //Console.ReadKey();
+
+            //**************************************** Q:寫一程式，輸入N個整數，求其最小值 while迴圈 *********************************************************
+
+            //Console.WriteLine("請決定輸入幾個數字");
+            //int num = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("請輸入第1個整數");
+            //int min = Convert.ToInt32(Console.ReadLine());
+
+            //int i = 1;
+            //while (i < num)
+            //{
+            //    Console.WriteLine($"請輸入第{i + 1}個整數");
+            //    int now = Convert.ToInt32(Console.ReadLine());
+            //    i++;
+
+            //    if (min > now)
+            //    {
+            //        min = now;
+            //    }
+            //}
+            //Console.WriteLine($"最小值{min}");
+            //Console.ReadKey();
+
+            //************************************* Q:寫一程式，輸入10個整數，列出其中所有大於12的數字 for迴圈 **************************************************
+
+
+            //Console.WriteLine("請輸入整數");
+            //int big12 = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 0; i < 9; i++)
+            //{
+            //    Console.WriteLine("請輸入整數");
+            //    int now = Convert.ToInt32(Console.ReadLine());
+            //    if (now > 12)
+            //    {
+            //        big12 = now;
+            //    }
+            //    Console.WriteLine("大於12的數字有：");
+            //    for (int i = 0; i < n; i++)
+            //    {
+            //        if (numbers[i] > 12)
+            //        {
+            //            Console.WriteLine(numbers[i]);
+            //        }
+            //    }
+            //}
+
+            //Console.ReadKey();
+
+            //************************************** Q:寫一程式，輸入10個整數，列出其中所有大於12的數字 while迴圈************************************************
+
+            int min = 12;
+            int n = 10;
+            int[] answer = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("請輸入整數");
+                int now = Convert.ToInt32(Console.ReadLine());
+                if (now > min)
+                {
+                    Console.WriteLine(answer[n]);
+                }
+            }
+
+            Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    }
+}
+
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34301.259
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch3hw", "Ch3hw\Ch3hw.csproj", "{0A51093F-521E-4B48-A275-D329B4437C13}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0A51093F-521E-4B48-A275-D329B4437C13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A51093F-521E-4B48-A275-D329B4437C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A51093F-521E-4B48-A275-D329B4437C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A51093F-521E-4B48-A275-D329B4437C13}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {13BA85E5-F21B-4D70-9D22-F4B4AB24B880}
-	EndGlobalSection
-EndGlobal
